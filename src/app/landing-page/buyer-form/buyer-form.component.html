@@ -1,0 +1,27 @@
+<div class="buyer-form">
+        <mat-card class="card-container">
+            <mat-card-header class="header">
+                <mat-card-title>Find Your Perfect Car Match</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <form [formGroup]="buyerForm" (ngSubmit)="onSubmit()">
+                    <div *ngFor="let field of fields; let i = index" [ngSwitch]="field.type">
+                        <mat-form-field appearance="fill">
+                            <mat-label>{{field.name | headerMapping}}</mat-label>
+
+                            <mat-select [formControlName]="field.name" *ngSwitchCase="'select'">
+                                <mat-option *ngFor="let option of field.options"
+                                    [value]="option">{{option}}</mat-option>
+                            </mat-select>
+
+                            <input *ngSwitchDefault matInput [formControlName]="field.name" [type]="field.type"
+                                [value]="field.value">
+                        </mat-form-field>
+                    </div>
+                    <div class="submit-button-container">
+                        <button type="submit" mat-raised-button color="primary" class="submit-button" [disabled]="!buyerForm.valid">Submit</button>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+</div>

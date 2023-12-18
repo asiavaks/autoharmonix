@@ -1,0 +1,95 @@
+
+.buyer-form {
+    background-image: url('../../../assets/form-background.png');
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    padding-top: 120px;
+
+
+    .buyer-form::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.699);
+        z-index: 1;
+    }
+
+    .card-container mat-card mat-card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    mat-card {
+        position: relative;
+        z-index: 2;
+        background-color: #111727d2;
+        max-width: 600px;
+        margin: 0px auto;
+        color: white;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        mat-card-title {
+            color: #C66632;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        mat-card-header {
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        mat-form-field {
+            width: 100%;
+        }
+
+        .submit-button-container {
+            display: flex;
+            justify-content: center;
+
+            .submit-button {
+                display: flex;
+                justify-content: center;
+                letter-spacing: 1px;
+                background-color: #C66632; 
+                color: white;
+                font-size: 16px; 
+                padding: 10px 20px; 
+                border-radius: 4px; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s, transform 0.3s; 
+
+                &:hover {
+                    background-color: #92471e; 
+                    transform: translateY(-2px); 
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+                }
+
+                &:active {
+                    transform: translateY(1px); 
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+                }
+            }
+        }
+
+    }
+
+
+}

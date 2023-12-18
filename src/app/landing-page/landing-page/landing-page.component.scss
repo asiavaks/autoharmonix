@@ -1,0 +1,47 @@
+@import '../../../styles.scss';
+
+.landing-page {
+    background-image: url('../../../assets/car-dealership-main-image.png');
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mat-mdc-raised-button:not(:disabled) {
+    background-color: #C66632;
+}
+
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    background-color: #C66632; 
+    color: white;
+    font-size: 20px; 
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, transform 0.3s; 
+
+    &:hover {
+        background-color: #92471e; 
+        transform: translateY(-2px); 
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    }
+
+    &:active {
+        transform: translateY(1px); 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    }
+}
+

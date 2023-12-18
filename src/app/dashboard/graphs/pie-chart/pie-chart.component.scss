@@ -1,0 +1,19 @@
+#chart {
+  max-width: 380px;
+  margin: 35px auto;
+  padding: 0;
+}
+
+app-pie-chart{
+  display: flex;
+}
+
+mat-card {
+  background-color: #111727ea;
+  max-width: 600px;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding: 20px;
+  flex: 1; 
+
+}

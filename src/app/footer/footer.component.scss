@@ -1,0 +1,13 @@
+@import '../../styles.scss';
+
+mat-toolbar {
+    background: mat-color($app-primary);
+    color: mat-contrast($app-primary, 500);
+    justify-content: center;
+    letter-spacing: 2px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }

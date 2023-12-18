@@ -1,0 +1,7 @@
+<div class="mat-dialog">
+    <h1 class="title">{{ data.title }}</h1>
+    <p [innerHTML]= "data.message"></p>
+    <div class="submit-button-container">
+        <button type="submit" mat-raised-button color="primary" class="submit-button" (click)="closeDialogAndNavigate(data.url)">Close</button>
+    </div>
+</div>

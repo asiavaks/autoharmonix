@@ -1,0 +1,23 @@
+<mat-toolbar>
+  <span (click)="navigate('/landing')"><img src="../../assets/logo.png" alt="Car Dealership"></span>
+
+  <span class="example-spacer"></span>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="navigate('/landing')">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-menu-item (click)="navigate('/dashboard')">
+      <mat-icon>dashboard</mat-icon>
+      <span>Dashboard</span>
+    </button>
+    <button mat-menu-item (click)="navigate('/buyer-form')">
+      <mat-icon>add_circle</mat-icon>
+      <span>Find your dream car!</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

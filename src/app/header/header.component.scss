@@ -1,0 +1,30 @@
+@import '../../styles.scss';
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background: mat-color($app-primary);
+  color: mat-contrast($app-primary, 500);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+
+  mat-icon {
+    color: #C66632;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  img {
+    width: 200px;
+    padding-top: 14px;
+    cursor: pointer;
+  }
+}

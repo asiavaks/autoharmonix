@@ -1,0 +1,50 @@
+app-data-table {
+    flex: 1 1 80%;
+}
+
+app-pie-chart {
+    flex: 1;
+    min-width: 500px;
+}
+
+app-column-chart {
+    flex: 1;
+    min-width: 500px;
+}
+
+
+.dashboard-container {
+    background-image: url('../../../assets/dashboard-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .dashboards {
+
+        padding-bottom: 40px;
+        display: flex;
+        padding-top: 100px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 85vw;
+    }
+
+    .dashboard-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.692);
+        z-index: 1;
+        pointer-events: none;
+    }
+}
