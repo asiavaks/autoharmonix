@@ -1,17 +1,16 @@
-@import '../../styles.scss';
 
 .example-spacer {
   flex: 1 1 auto;
 }
 
 mat-toolbar {
-  background: mat-color($app-primary);
-  color: mat-contrast($app-primary, 500);
+  background: #111727;
+  color: white;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; 
+  z-index: 1000;
 
   mat-icon {
     color: #C66632;

@@ -1,13 +1,13 @@
 
 .buyer-form {
     background-image: url('../../../assets/form-background.png');
-    z-index: 1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
     padding-top: 120px;
+    padding-bottom: 120px;
 
 
     .buyer-form::before {
@@ -35,7 +35,6 @@
 
     mat-card {
         position: relative;
-        z-index: 2;
         background-color: #111727d2;
         max-width: 600px;
         margin: 0px auto;

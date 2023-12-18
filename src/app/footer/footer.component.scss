@@ -1,8 +1,7 @@
-@import '../../styles.scss';
 
 mat-toolbar {
-    background: mat-color($app-primary);
-    color: mat-contrast($app-primary, 500);
+    background: #111727fa;
+    color: white;
     justify-content: center;
     letter-spacing: 2px;
     left: 0;
